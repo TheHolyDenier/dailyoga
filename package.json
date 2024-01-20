@@ -12,11 +12,11 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.4.1",
-    "@types/node": "^20.11.5",
     "astro": "^4.2.1",
     "sass": "^1.70.0"
   },
   "devDependencies": {
+    "@types/node": "^20.11.5",
     "@typescript-eslint/eslint-plugin": "^6.19.0",
     "@typescript-eslint/parser": "^6.19.0",
     "eslint": "^8.56.0",
@@ -28,6 +28,12 @@
     "eslint-plugin-promise": "^6.1.1",
     "prettier": "^3.2.4",
     "prettier-plugin-astro": "^0.13.0",
+    "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
-  }
+  },
+  "description": "```sh npm create astro@latest -- --template basics ```",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
