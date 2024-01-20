@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.4.1",
+    "@types/node": "^20.11.5",
     "astro": "^4.2.1",
     "sass": "^1.70.0"
   },
