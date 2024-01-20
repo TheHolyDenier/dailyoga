@@ -1,3 +1,43 @@
 ---
-$END$
+import VectorImage from "./VectorImage.astro";
+
+const data = {
+  asana: "Adho Mukha Svanasana",
+  sanskrit: "अधोमुखश्वानासन",
+  spanish: "Perro hacia abajo",
+  english: "Downward-Facing Dog",
+};
 ---
+
+<div class="card">
+  <VectorImage name={data.asana} width="300" height="300" />
+  <div class="card__info">
+    <h2 class="sanskrit">{data.sanskrit}</h2>
+    <h3>{data.asana}</h3>
+    <p>{data.spanish} · {data.english}</p>
+  </div>
+</div>
+
+<style lang="scss">
+  @use "../../public/styles/media-queries" as *;
+
+  .card {
+    display: flex;
+    gap: 1em;
+    padding: 1em;
+
+    @include mobile {
+      flex-direction: column;
+    }
+
+    @include tablet {
+      flex-direction: column;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+</style>

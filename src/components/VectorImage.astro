@@ -1,9 +1,12 @@
 ---
 interface Props {
-    label: string;
-    name: string;
+  name: string;
+  width: number;
+  height: number;
 }
 
-const { label, name } = Astro.props;
+const { name, width, height } = Astro.props;
+const src = `/svg/${name.toLowerCase().split(" ").join("-")}.svg`;
 ---
-<img :alt="label" src="" />
+
+<img alt={name} src={src} width={width} height={height} />
